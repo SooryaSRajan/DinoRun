@@ -11,13 +11,11 @@
 #include<conio.h>      //
 /////////////////////////
 
-
+//Hello, These are the variables I am doing
 ///////VARIABLES:
 static int scr=0,int rn=2707+random(9999),int hisc,int au=1;
-int t=0,speed=38;
+int t=0,speed=38,BLK=0,BLK2=0,lvl=1;
 char check;
-int BLK=0,BLK2=0,lvl=1;
-int haha;
 
 /////////////////////// CLASS DECLARATION/DEFINITIONS ///////////////////////////
 
@@ -95,6 +93,7 @@ void Dinosaur::title()
 	window(14,14,40,15);
 	cprintf("     ��  ��      ");
 
+//This is top: 
 top:
 check=getch();
 
