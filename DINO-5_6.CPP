@@ -17,6 +17,7 @@ static int scr=0,int rn=2707+random(9999),int hisc,int au=1;
 int t=0,speed=38;
 char check;
 int BLK=0,BLK2=0,lvl=1;
+int haha;
 
 /////////////////////// CLASS DECLARATION/DEFINITIONS ///////////////////////////
 
