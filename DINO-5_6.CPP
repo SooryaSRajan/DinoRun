@@ -13,12 +13,9 @@
 
 
 ///////VARIABLES:
-static int scr=0;
+static int scr=0,int rn=2707+random(9999),int hisc,int au=1;
 int t=0,speed=38;
-static int hisc;
 char check;
-static int au=1;
-static int rn=2707+random(9999);
 int BLK=0,BLK2=0,lvl=1;
 
 /////////////////////// CLASS DECLARATION/DEFINITIONS ///////////////////////////
@@ -79,23 +76,23 @@ void Dinosaur::title()
  textcolor(7);
  _setcursortype(_NOCURSOR);
 	window(14,6,40,15);
-	cprintf("         ÜÛßÛÛÛÛÜ");
+	cprintf("         ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");
 	window(14,7,40,15);
-	cprintf("         ÛÛÛÛÛÛÛÛ");
+	cprintf("         ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");
 	window(14,8,40,15);
-	cprintf("         ÛÛÛÛÛßßß");
+	cprintf("         ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");
 	window(14,9,40,15);
-	cprintf(" Û      ÜÛÛÛÛßßß ");
+	cprintf(" ï¿½      ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ");
 	window(14,10,40,15);
-	cprintf(" ÛÛÜ  ÜÛÛÛÛÛÛÜÜ  ");
+	cprintf(" ï¿½ï¿½ï¿½  ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½  ");
 	window(14,11,40,15);
-	cprintf(" ßÛÛÛÛÛÛÛÛÛÛÛ ß  ");
+	cprintf(" ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½  ");
 	window(14,12,40,15);
-	cprintf("   ßÛÛÛÛÛÛÛß     ");
+	cprintf("   ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½     ");
 	window(14,13,40,15);
-	cprintf("    ßÛÛßÛÛß    ");
+	cprintf("    ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½    ");
 	window(14,14,40,15);
-	cprintf("     ÛÜ  ÛÜ      ");
+	cprintf("     ï¿½ï¿½  ï¿½ï¿½      ");
 
 top:
 check=getch();
@@ -204,7 +201,7 @@ void Dinosaur::getup()
 	window(1,25,80,25);
 	textcolor(GREEN);
 	for(int x=0;x<79;x++)
-		cprintf("Û");
+		cprintf("ï¿½");
 
 }
 
@@ -264,26 +261,26 @@ void Dinosaur::ds(int jump=0)
 	window(2,16-t,18,25);
 	if(t>0)
 	cprintf("                 ");
-	cprintf("         ÜÛßÛÛÛÛÜ");
-	cprintf("         ÛÛÛÛÛÛÛÛ");
-	cprintf("         ÛÛÛÛÛßßß");
-	cprintf(" Û      ÜÛÛÛÛßßß ");
-	cprintf(" ÛÛÜ  ÜÛÛÛÛÛÛÜÜ  ");
-	cprintf(" ßÛÛÛÛÛÛÛÛÛÛÛ ß  ");
-	cprintf("   ßÛÛÛÛÛÛÛß     ");
+	cprintf("         ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");
+	cprintf("         ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");
+	cprintf("         ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");
+	cprintf(" ï¿½      ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ");
+	cprintf(" ï¿½ï¿½ï¿½  ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½  ");
+	cprintf(" ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½  ");
+	cprintf("   ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½     ");
 
 	/////SUSTAINS LEG MOTION/////
 	if(a==1)
 	{
-	     cprintf("    ßÛÛß  ßßß    ");
-	     cprintf("      ÛÜ         ");
+	     cprintf("    ï¿½ï¿½ï¿½ï¿½  ï¿½ï¿½ï¿½    ");
+	     cprintf("      ï¿½ï¿½         ");
 	     a=2;
 	}
 
 	else if(a==2)
 	{
-	    cprintf("     ßÛÜ ßÛ      ");
-	    cprintf("          ÛÜ     ");
+	    cprintf("     ï¿½ï¿½ï¿½ ï¿½ï¿½      ");
+	    cprintf("          ï¿½ï¿½     ");
 	    a=1;
 	}
 	if(t>1)
@@ -302,29 +299,29 @@ void Dinosaur::duck(int jump=0)
      if(jump==1 || jump==2)
 	{
 	cout<<"                      \n";
-	cout<<"          ÜÛßÛÛÛÛÜ    \n";
-	cout<<"          ÛÛÛÛÛÛÛÛ    \n";
-	cout<<" ßÛ       ÛÛÛÛÛßßß    \n";
-	cout<<"  ßÛÛÜ ÜÛÛÛÛÛÛßßß     \n";
-	cout<<"   ßÛÛÛÛÛÛÛÛÛÜÜ       \n";
+	cout<<"          ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½    \n";
+	cout<<"          ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½    \n";
+	cout<<" ï¿½ï¿½       ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½    \n";
+	cout<<"  ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½     \n";
+	cout<<"   ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½       \n";
 
 	}
 
        ///////SUSTAINS LEG MOTION////
        if(a==1)
 	{
-	cout<<"    ßÛÛÛÛÛÛÛÛ ß   \n";
-	cout<<"     ßÛÛß  ßß     \n";
-	cout<<"       ÛÜ         \n";
+	cout<<"    ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½   \n";
+	cout<<"     ï¿½ï¿½ï¿½ï¿½  ï¿½ï¿½     \n";
+	cout<<"       ï¿½ï¿½         \n";
 
 	a=2;
 	}
 
       else if(a==2)
 	{
-	cout<<"    ßÛÛÛÛÛÛÛÛ ß   \n";
-	cout<<"      ßÛÜ ßÛ      \n";
-	cout<<"           ÛÜ     \n";
+	cout<<"    ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½   \n";
+	cout<<"      ï¿½ï¿½ï¿½ ï¿½ï¿½      \n";
+	cout<<"           ï¿½ï¿½     \n";
 	a=1;
 	}
 	delay(speed);
@@ -385,11 +382,11 @@ void Dinosaur::obj1()
 
 	///OBSTACLE LIVE MOTION CODE///
 	window(74-x,20,80-x,25);
-	cprintf("  Û    ");
-	cprintf("  ÛÛ Û ");
-	cprintf("ÛÜÛÛÜÛ ");
-	cprintf("  ÛÛ   ");
-	cprintf("  ÛÛÛ  ");
+	cprintf("  ï¿½    ");
+	cprintf("  ï¿½ï¿½ ï¿½ ");
+	cprintf("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ");
+	cprintf("  ï¿½ï¿½   ");
+	cprintf("  ï¿½ï¿½ï¿½  ");
 	x++;
 
 	if(x>=72)
@@ -468,11 +465,11 @@ void Dinosaur::obj2(char ch)
 
 	///OBSTACLE LIVE MOTION CODE///
 	window(74-x,11,80-x,25);
-	cprintf("Û    Û ");
-	cprintf("Û    Û ");
-	cprintf("ÛÜÜÜÜÛ ");
-	cprintf("Û_Û_ÛÛ ");
-	cprintf("ÛÛÛÛÛ  ");
+	cprintf("ï¿½    ï¿½ ");
+	cprintf("ï¿½    ï¿½ ");
+	cprintf("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ");
+	cprintf("ï¿½_ï¿½_ï¿½ï¿½ ");
+	cprintf("ï¿½ï¿½ï¿½ï¿½ï¿½  ");
 
 	x++;
 	if(x>=72)
